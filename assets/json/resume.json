@@ -1,17 +1,17 @@
 {
   "basics": {
-    "name": "Albert Einstein",
-    "label": "Scientist",
+    "name": "Vasilis Ntinas",
+    "label": "Assistant Professor (Tenure-Track)",
     "image": "",
-    "email": "einstein@example.com",
-    "phone": "(912) 123-4567",
-    "summary": "A German-born theoretical physicist, widely ranked among the greatest and most influential scientists of all time",
+    "email": "vntinas@es.aau.dk",
+    "phone": "",
+    "summary": "Assistant Professor (Tenure-Track) at Aalborg University working on memristive computing, edge intelligence, neuromorphic circuits, and cellular nonlinear networks.",
     "location": {
-      "address": "2712 Broadway St",
-      "postalCode": "CA 94115",
-      "city": "San Francisco",
-      "countryCode": "US",
-      "region": "California"
+      "address": "Frederikskaj 12, Building B",
+      "postalCode": "2450",
+      "city": "Copenhagen",
+      "countryCode": "DK",
+      "region": "Denmark"
     },
     "profiles": []
   },

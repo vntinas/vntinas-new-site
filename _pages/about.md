@@ -2,33 +2,45 @@
 layout: about
 title: about
 permalink: /
-subtitle: <a href='#'>Affiliations</a>. Address. Contacts. Motto. Etc.
+subtitle: >
+  Assistant Professor (Aalborg University, Denmark)
 
 profile:
   align: right
   image: prof_pic.jpg
-  image_circular: false # crops the image to make it circular
+  image_circular: false
   more_info: >
-    <p>555 your office number</p>
-    <p>123 your address street</p>
-    <p>Your City, State 12345</p>
-
-selected_papers: true # includes a list of papers marked as "selected={true}"
-social: true # includes social icons at the bottom of the page
+    <p><a href="https://www.es.aau.dk/research/edge-computing-and-networking" target="_blank">Edge Computing and Networking Group</a></p>
+    <p><a href="https://www.en.tech.aau.dk/research/research-groups/cmi-communication-media-information-technologies" target="_blank">CMI Section</a></p>
+    <p><a href="https://www.es.aau.dk" target="_blank">Department of Electronic Systems</a></p>
+    <p>Frederikskaj 12, Building B<br>Copenhagen, Denmark</p>
 
 announcements:
-  enabled: true # includes a list of news items
-  scrollable: true # adds a vertical scroll bar if there are more than 3 news items
-  limit: 5 # leave blank to include all the news in the `_news` folder
-
-latest_posts:
   enabled: true
-  scrollable: true # adds a vertical scroll bar if there are more than 3 new posts items
-  limit: 3 # leave blank to include all the blog posts
+  scrollable: true
+  limit: 5
+
+latest_posts: false
+selected_papers: true
+social: false
 ---
 
-Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](https://www.reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
+I am an **Assistant Professor (Tenure-Track)** at [Aalborg University](https://www.en.aau.dk), affiliated with the [Edge Computing and Networking Group](https://www.es.aau.dk/research/edge-computing-and-networking), the [CMI Section](https://www.en.tech.aau.dk/research/research-groups/cmi-communication-media-information-technologies), and the [Department of Electronic Systems](https://www.es.aau.dk).
 
-Put your address / P.O. box / other info right below your picture. You can also disable any of these elements by editing `profile` property of the YAML header of your `_pages/about.md`. Edit `_bibliography/papers.bib` and Jekyll will render your [publications page](/al-folio/publications/) automatically.
+My research focuses on **memristive computing architectures** for edge intelligence, **physics-based and variability-aware device modeling**, and **stochastic phenomena** in resistive switching systems, including noise, stochastic resonance, and random-telegraph noise. A central thread in this work is the study of **Cellular Nonlinear Networks (CNNs)** and their memristive implementations, alongside **neuromorphic circuits** based on threshold switches and bio-inspired spiking dynamics, and **cellular automata** for unconventional and probabilistic computation.
 
-Link to your social media connections, too. This theme is set up to use [Font Awesome icons](https://fontawesome.com/) and [Academicons](https://jpswalsh.github.io/academicons/), like the ones below. Add your Facebook, Twitter, LinkedIn, Google Scholar, or just disable all of them.
+Prior to joining AAU, I was a **Postdoctoral Researcher** at TU Dresden in the Chair of Fundamentals of Electrical Engineering led by Prof. Ronald Tetzlaff. There, I worked on memristive Cellular Nonlinear Networks within the DFG project [Mem2CNN](https://memristec.de/en/), part of the priority programme [Memristive Devices Toward Smart Technical Systems (SPP 2262)](https://memristec.de/en/).
+
+I hold a **joint Ph.D.** from [Universitat Politecnica de Catalunya](https://hipics.upc.edu/) and [Democritus University of Thrace](http://gsirak.ee.duth.gr/), under the supervision of Prof. Antonio Rubio and Prof. Georgios Ch. Sirakoulis. My doctoral work examined stochasticity in memristor systems across scales, from device physics to computing architecture. I also hold an **M.Sc.** in Microelectronics and Computer Systems and a **Diploma** in Electrical and Computer Engineering from Democritus University of Thrace, where I received the Best Diploma Thesis Award.
+
+## Academic Journey
+
+- **Assistant Professor (Tenure-Track)**, Aalborg University, Copenhagen, Denmark, 2025-present
+- **Postdoctoral Researcher**, Technische Universitat Dresden, Dresden, Germany, 2022-2025
+- **Ph.D. in Electronic Engineering / Electrical and Computer Engineering**, Universitat Politecnica de Catalunya and Democritus University of Thrace, 2017-2022
+- **M.Sc. in Microelectronics and Computer Systems**, Democritus University of Thrace, 2015-2017
+- **Diploma in Electrical and Computer Engineering**, Democritus University of Thrace, 2010-2015
+
+**Research interests:** memristive computing architectures for edge intelligence &nbsp;·&nbsp; physics-based and variability-aware device modeling &nbsp;·&nbsp; stochastic phenomena in resistive switching systems &nbsp;·&nbsp; Cellular Nonlinear Networks and memristive CNN implementations &nbsp;·&nbsp; neuromorphic circuits and threshold switch neurons &nbsp;·&nbsp; cellular automata for unconventional computation
+
+---

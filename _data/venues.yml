@@ -1,9 +1,59 @@
-"AJP":
-  url: https://aapt.scitation.org/journal/ajp
-  color: "#00369f"
+"AEM":
+  url: https://advanced.onlinelibrary.wiley.com/journal/2199160x
+  color: "#0f766e"
 
-"PhysRev":
-  url: https://journals.aps.org/
+"AEU":
+  url: https://www.sciencedirect.com/journal/aeu-international-journal-of-electronics-and-communications
+  color: "#3b82f6"
 
-"Vision":
-  color: "#009f36"
+"Access":
+  url: https://ieeeaccess.ieee.org/
+  color: "#2563eb"
+
+"EDL":
+  url: https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=55
+  color: "#dc2626"
+
+"Electronics":
+  url: https://www.mdpi.com/journal/electronics
+  color: "#7c3aed"
+
+"ICECS":
+  url: https://ieee-icecs.org/
+  color: "#1d4ed8"
+
+"ISCAS":
+  url: https://ieee-cas.org/conference/iscas
+  color: "#ea580c"
+
+"MOCAST":
+  url: https://mocast.eu/
+  color: "#0f766e"
+
+"NANOARCH":
+  url: https://nanoarch.org/
+  color: "#4f46e5"
+
+"SMACD":
+  url: https://smacd-conference.org/
+  color: "#0891b2"
+
+"TCAS-I":
+  url: https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=8919
+  color: "#1d4ed8"
+
+"TCAS-II":
+  url: https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=8920
+  color: "#2563eb"
+
+"TED":
+  url: https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=16
+  color: "#dc2626"
+
+"TNANO":
+  url: https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=7729
+  color: "#7c3aed"
+
+"TNNLS":
+  url: https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=5962385
+  color: "#0f766e"

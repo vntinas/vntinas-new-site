@@ -1,34 +1,27 @@
-"adams":
-  - firstname: ["Edwin", "E.", "E. P.", "Edwin Plimpton"]
-    url: https://en.wikipedia.org/wiki/Edwin_Plimpton_Adams
+"rubio":
+  - firstname: ["Antonio", "A."]
+    url: https://hipics.upc.edu/en/people/faculty/a-rubio
 
-"podolsky":
-  - firstname: ["Boris", "B.", "B. Y.", "Boris Yakovlevich"]
-    url: https://en.wikipedia.org/wiki/Boris_Podolsky
+"sirakoulis":
+  - firstname: ["Georgios", "G.", "G. Ch.", "Georgios Ch."]
+    url: http://gsirak.ee.duth.gr/
 
-"rosen":
-  - firstname: ["Nathan", "N."]
-    url: https://en.wikipedia.org/wiki/Nathan_Rosen
+"tetzlaff":
+  - firstname: ["Ronald", "R."]
+    url: https://tu-dresden.de/ing/elektrotechnik/iee/ge/die-professur
 
-"bach":
-  - firstname: ["Johann Sebastian", "J. S."]
-    url: https://en.wikipedia.org/wiki/Johann_Sebastian_Bach
+"ascoli":
+  - firstname: ["Alon", "A."]
+    url: https://webthesis.biblio.polito.it/view/creators/Ascoli=3AAlon=3A=3A.html
 
-  - firstname: ["Carl Philipp Emanuel", "C. P. E."]
-    url: https://en.wikipedia.org/wiki/Carl_Philipp_Emanuel_Bach
+"adamatzky":
+  - firstname: ["Andrew", "A.", "A. I."]
+    url: https://www.uwe.ac.uk/people/andrew-adamatzky
 
-"przibram":
-  - firstname: ["Karl"]
-    url: https://link.springer.com/article/10.1007/s00016-019-00242-z
+"rana":
+  - firstname: ["Vijay", "V."]
+    url: https://www.fz-juelich.de/en/pgi/pgi-7/research/memristive-devices-and-systems/team/vijay-rana
 
-"schrodinger":
-  - firstname: ["Erwin"]
-    url: https://en.wikipedia.org/wiki/Erwin_Schr%C3%B6dinger
-
-"lorentz":
-  - firstname: ["Hendrik Antoon"]
-    url: https://en.wikipedia.org/wiki/Hendrik_Lorentz
-
-"planck":
-  - firstname: ["Max"]
-    url: https://en.wikipedia.org/wiki/Max_Planck
+"menzel":
+  - firstname: ["Stephan", "S."]
+    url: https://www.fz-juelich.de/en/pgi/pgi-7/research/memristive-devices-and-systems/team/stephan-menzel

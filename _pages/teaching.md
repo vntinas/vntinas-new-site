@@ -2,14 +2,18 @@
 layout: page
 permalink: /teaching/
 title: teaching
-description: Course materials, schedules, and resources for classes taught.
+description: Courses taught at Aalborg University.
 nav: true
-nav_order: 6
-calendar: true
+nav_order: 5
 ---
 
-This page displays a collection of courses with detailed schedules, materials, and resources. You can organize your courses by years, terms, or topics.
+I teach courses at the BSc and MSc level within the Department of Electronic Systems at Aalborg University, Copenhagen. The courses span topics in electronics, embedded systems, and computing architectures.
 
-{% include calendar.liquid calendar_id='test@gmail.com' timezone='Asia/Shanghai' %}
+**Aalborg University, Copenhagen**
 
-{% include courses.liquid %}
+- *Electronic Circuits and Systems* — BSc level
+- *Digital Systems Design* — BSc level
+- *Embedded Systems and Hardware Architectures* — MSc level
+- *Neuromorphic and In-Memory Computing* — MSc level (special topics)
+
+Course-specific materials and resources are distributed through the AAU course management system. This page will be updated with current course information each semester.
