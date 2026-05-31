@@ -13,13 +13,21 @@
               <span class="journey-org">{{ item.org }}</span>
             {% endif %}
           {% endif %}
-          {% if item.dates %}<span class="journey-dates">{{ item.dates }}</span>{% endif %}
+          {% if item.dates -%}
+            <span class="journey-dates">{{ item.dates }}</span>
+          {%- endif %}
         </p>
-        {% if item.location %}<p class="journey-location">{{ item.location }}</p>{% endif %}
-        {% if item.description %}<p class="journey-desc">{{ item.description }}</p>{% endif %}
+        {% if item.location %}
+          <p class="journey-location">{{ item.location }}</p>
+        {% endif %}
+        {% if item.description %}
+          <p class="journey-desc">{{ item.description }}</p>
+        {% endif %}
         {% if item.tags %}
           <div class="journey-tags">
-            {% for tag in item.tags %}<span class="journey-tag">{{ tag }}</span>{% endfor %}
+            {% for tag in item.tags -%}
+              <span class="journey-tag">{{ tag }}</span>
+            {%- endfor %}
           </div>
         {% endif %}
       </div>

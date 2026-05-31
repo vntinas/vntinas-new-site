@@ -10,9 +10,7 @@
   var DARK = "#8f86d6"; // lightened AAU blue for dark backgrounds
 
   function currentTheme() {
-    return document.documentElement.getAttribute("data-theme") === "dark"
-      ? "dark"
-      : "light";
+    return document.documentElement.getAttribute("data-theme") === "dark" ? "dark" : "light";
   }
 
   function config(color) {

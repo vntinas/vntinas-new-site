@@ -11,9 +11,9 @@ I teach courses at the BSc and MSc level within the Department of Electronic Sys
 
 **Aalborg University, Copenhagen**
 
-- *Electronic Circuits and Systems* — BSc level
-- *Digital Systems Design* — BSc level
-- *Embedded Systems and Hardware Architectures* — MSc level
-- *Neuromorphic and In-Memory Computing* — MSc level (special topics)
+- _Electronic Circuits and Systems_ — BSc level
+- _Digital Systems Design_ — BSc level
+- _Embedded Systems and Hardware Architectures_ — MSc level
+- _Neuromorphic and In-Memory Computing_ — MSc level (special topics)
 
 Course-specific materials and resources are distributed through the AAU course management system. This page will be updated with current course information each semester.

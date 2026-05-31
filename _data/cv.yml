@@ -26,7 +26,7 @@ cv:
         start_date: 2017
         end_date: 2022
         highlights:
-          - "Thesis: \"Harnessing Memristor Circuits and Device Variability in Emergent Computing Applications\""
+          - 'Thesis: "Harnessing Memristor Circuits and Device Variability in Emergent Computing Applications"'
           - "Supervisors: Prof. Georgios Ch. Sirakoulis (DUTh) and Prof. Antonio Rubio (UPC)"
 
       - institution: Democritus University of Thrace
@@ -37,7 +37,7 @@ cv:
         start_date: 2015
         end_date: 2017
         highlights:
-          - "Thesis: \"Smart Bio-Inspired Electronic Systems with Memristive Devices\""
+          - 'Thesis: "Smart Bio-Inspired Electronic Systems with Memristive Devices"'
 
       - institution: Democritus University of Thrace
         location: Xanthi, Greece
@@ -47,7 +47,7 @@ cv:
         start_date: 2010
         end_date: 2015
         highlights:
-          - "Thesis: \"Study, design, and development of electronic circuits, inspired by nature, with learning capabilities, using circuit elements with memory (Memristors)\""
+          - 'Thesis: "Study, design, and development of electronic circuits, inspired by nature, with learning capabilities, using circuit elements with memory (Memristors)"'
           - Recipient of the Best Diploma Thesis Award
 
     Experience:

@@ -80,13 +80,13 @@ If something is wrong, reverse step 6/5: remove the domain from
 Edit content → commit → push to `main`. Actions rebuilds and redeploys
 automatically. Common edit targets:
 
-| What | File |
-| --- | --- |
-| Bio, sections toggle | `_pages/about.md` |
-| Academic journey | `_data/journey.yml` |
-| Research interests | `_data/interests.yml` |
-| Research highlights | `_data/highlights.yml` |
-| Footer contact + map | `_data/contact.yml` |
-| News items | `_news/*.md` (`short:` = sidebar headline) |
-| Publications | `_bibliography/papers.bib` |
-| Theme color / styles | `_sass/_themes.scss`, `_sass/*.scss` |
+| What                 | File                                       |
+| -------------------- | ------------------------------------------ |
+| Bio, sections toggle | `_pages/about.md`                          |
+| Academic journey     | `_data/journey.yml`                        |
+| Research interests   | `_data/interests.yml`                      |
+| Research highlights  | `_data/highlights.yml`                     |
+| Footer contact + map | `_data/contact.yml`                        |
+| News items           | `_news/*.md` (`short:` = sidebar headline) |
+| Publications         | `_bibliography/papers.bib`                 |
+| Theme color / styles | `_sass/_themes.scss`, `_sass/*.scss`       |

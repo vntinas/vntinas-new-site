@@ -20,7 +20,10 @@
         <!-- Left: contact details -->
         <div class="footer-info">
           <h3 class="footer-name">
-            {{ site.first_name }} {{ site.middle_name }} {{ site.last_name }}{% if c.name_suffix %} {{ c.name_suffix }}{% endif %}
+            {{ site.first_name }}
+            {{ site.middle_name }}
+            {{ site.last_name -}}
+            {%- if c.name_suffix %} {{ c.name_suffix }}{% endif %}
           </h3>
 
           {% if c.email %}
@@ -33,15 +36,21 @@
           <p class="footer-line footer-address">
             <i class="fa-solid fa-location-dot fa-fw"></i>
             <span>
-              {% if c.office %}{{ c.office }}<br>{% endif %}
-              {% for line in c.address_lines %}{{ line }}<br>{% endfor %}
+              {% if c.office -%}
+                {{- c.office -}}
+                <br>
+              {% endif %}
+              {% for line in c.address_lines -%}
+                {{- line -}}
+                <br>
+              {% endfor %}
             </span>
           </p>
 
           {% if c.homepage_url %}
             <p class="footer-line">
               <i class="fa-solid fa-briefcase fa-fw"></i>
-              <a href="{{ c.homepage_url }}" target="_blank" rel="noopener noreferrer">{{ c.homepage_label | default: "Homepage" }}</a>
+              <a href="{{ c.homepage_url }}" target="_blank" rel="noopener noreferrer">{{ c.homepage_label | default: 'Homepage' }}</a>
             </p>
           {% endif %}
 

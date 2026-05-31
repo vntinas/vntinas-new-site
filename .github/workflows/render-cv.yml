@@ -1,14 +1,6 @@
 name: Render a CV
+# Auto-trigger disabled — run manually from the Actions tab if/when cv.yml is ready.
 on:
-  push:
-    branches:
-      - main
-      - master
-    paths:
-      - "_data/cv.yml"
-      - "assets/rendercv/design.yaml"
-      - "assets/rendercv/locale.yaml"
-      - "assets/rendercv/settings.yaml"
   workflow_call:
   workflow_dispatch:
 permissions:
