@@ -46,6 +46,20 @@
             {% if page.permalink == '/' %} {% assign about_title = page.title %} {% endif %}
           {% endfor %}
 
+          <!-- News (first) -->
+          {% for p in site.pages %}
+            {% if p.permalink == '/news/' %}
+              <li class="nav-item {% if page.permalink == '/news/' %}active{% endif %}">
+                <a class="nav-link" href="{{ '/news/' | relative_url }}">
+                  {{- p.title }}
+                  {% if page.permalink == '/news/' %}
+                    <span class="sr-only">(current)</span>
+                  {% endif %}
+                </a>
+              </li>
+            {% endif %}
+          {% endfor %}
+
           <!-- About -->
           <li class="nav-item {% if page.permalink == '/' %}active{% endif %}">
             <a class="nav-link" href="{{ '/' | relative_url }}">
@@ -59,7 +73,7 @@
           <!-- Other pages -->
           {% assign sorted_pages = site.pages | sort: 'nav_order' %}
           {% for p in sorted_pages %}
-            {% if p.nav and p.autogen == null %}
+            {% if p.nav and p.autogen == null and p.permalink != '/news/' %}
               {% if p.dropdown %}
                 {% assign has_active_child = false %}
                 {% for child in p.children %}

@@ -12,6 +12,11 @@ layout: default
       {% endif %}
     </h1>
     <p class="desc">{{ page.subtitle }}</p>
+    {% if site.enable_navbar_social == false %}
+      <div class="header-social">
+        <div class="contact-icons">{% social_links %}</div>
+      </div>
+    {% endif %}
   </header>
 
   <article>
@@ -35,17 +40,45 @@ layout: default
         {% if page.profile.more_info %}
           <div class="more-info">{{ page.profile.more_info }}</div>
         {% endif %}
+        {% if page.profile.typed_info %}
+          <div class="typed-info-wrapper">
+            <span class="typed-info"></span>
+          </div>
+          <script>
+            document.addEventListener("DOMContentLoaded", function () {
+              if (typeof Typed === "undefined") return;
+              new Typed(".typed-info", {
+                strings: {{ page.profile.typed_info | jsonify }},
+                typeSpeed: 45,
+                backSpeed: 25,
+                backDelay: 1600,
+                startDelay: 400,
+                loop: true,
+                showCursor: true,
+                cursorChar: "|",
+              });
+            });
+          </script>
+        {% endif %}
+
+        <!-- News (sidebar, under photo) -->
+        {% if page.announcements and page.announcements.enabled %}
+          <div class="sidebar-news">
+            <h2 class="sidebar-news-title">
+              <a href="{{ '/news/' | relative_url }}">Latest news</a>
+            </h2>
+            {% include news_compact.liquid limit=3 sidebar=true %}
+          </div>
+        {% endif %}
       </div>
     {% endif %}
 
     <div class="clearfix">{{ content }}</div>
 
-    <!-- News -->
-    {% if page.announcements and page.announcements.enabled %}
-      <h2>
-        <a href="{{ '/news/' | relative_url }}" style="color: inherit">news</a>
-      </h2>
-      {% include news.liquid limit=true %}
+    <!-- Research highlights -->
+    {% if page.research_highlights %}
+      <h2>research highlights</h2>
+      {% include highlights.liquid %}
     {% endif %}
 
     <!-- Latest posts -->
@@ -54,14 +87,6 @@ layout: default
         <a href="{{ '/blog/' | relative_url }}" style="color: inherit">latest posts</a>
       </h2>
       {% include latest_posts.liquid %}
-    {% endif %}
-
-    <!-- Selected papers -->
-    {% if page.selected_papers %}
-      <h2>
-        <a href="{{ '/publications/' | relative_url }}" style="color: inherit">selected publications</a>
-      </h2>
-      {% include selected_papers.liquid %}
     {% endif %}
 
     <!-- Social -->

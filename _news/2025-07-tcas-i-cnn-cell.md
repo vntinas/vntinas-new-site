@@ -3,6 +3,7 @@ layout: post
 date: 2025-07-01
 inline: true
 related_posts: false
+short: New IEEE TCAS-I paper on M-CellNNs
 ---
 
 New journal paper accepted in **IEEE Transactions on Circuits and Systems I**:

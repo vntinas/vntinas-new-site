@@ -1,0 +1,81 @@
+/*******************************************************************************
+ * Research highlight cards (data: _data/highlights.yml)
+ ******************************************************************************/
+
+.highlights-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  margin: 1rem 0 1.5rem;
+
+  @media (max-width: 576px) {
+    grid-template-columns: 1fr;
+  }
+}
+
+.highlight-card {
+  border: 1px solid var(--global-divider-color);
+  border-radius: 10px;
+  padding: 1.1rem 1.2rem;
+  background-color: var(--global-card-bg-color);
+  transition:
+    box-shadow 0.2s ease-in-out,
+    transform 0.2s ease-in-out;
+
+  &:hover {
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+    transform: translateY(-2px);
+  }
+}
+
+.highlight-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.4rem;
+  height: 2.4rem;
+  margin-bottom: 0.7rem;
+  border-radius: 8px;
+  background-color: var(--global-theme-color);
+  color: #fff;
+  font-size: 1.1rem;
+}
+
+.highlight-title {
+  margin: 0 0 0.2rem;
+  font-size: 1.05rem;
+  font-weight: 600;
+  line-height: 1.3;
+  color: var(--global-text-color);
+  text-transform: none;
+}
+
+.highlight-venue {
+  margin: 0 0 0.5rem;
+  font-size: 0.82rem;
+  font-weight: 500;
+  color: var(--global-theme-color);
+}
+
+.highlight-desc {
+  margin: 0 0 0.6rem;
+  font-size: 0.85rem;
+  line-height: 1.5;
+  color: var(--global-text-color);
+}
+
+.highlight-link {
+  font-size: 0.82rem;
+  font-weight: 500;
+  color: var(--global-theme-color);
+  text-decoration: none;
+
+  i {
+    font-size: 0.75rem;
+    transition: transform 0.2s ease-in-out;
+  }
+
+  &:hover i {
+    transform: translateX(3px);
+  }
+}

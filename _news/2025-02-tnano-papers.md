@@ -3,6 +3,7 @@ layout: post
 date: 2025-02-15
 inline: true
 related_posts: false
+short: Two new IEEE T-NANO articles on M-CNNs
 ---
 
 Two new articles published in **IEEE Transactions on Nanotechnology**:

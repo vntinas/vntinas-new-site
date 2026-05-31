@@ -1,0 +1,28 @@
+{% comment %}Compact vertical timeline for the academic journey (data: _data/journey.yml){% endcomment %}
+<div class="journey-timeline">
+  {% for item in site.data.journey %}
+    <div class="journey-item">
+      <div class="journey-marker"></div>
+      <div class="journey-card">
+        <h3 class="journey-role">{{ item.role }}</h3>
+        <p class="journey-meta">
+          {% if item.org %}
+            {% if item.url %}
+              <a class="journey-org" href="{{ item.url }}" target="_blank" rel="noopener noreferrer">{{ item.org }}</a>
+            {% else %}
+              <span class="journey-org">{{ item.org }}</span>
+            {% endif %}
+          {% endif %}
+          {% if item.dates %}<span class="journey-dates">{{ item.dates }}</span>{% endif %}
+        </p>
+        {% if item.location %}<p class="journey-location">{{ item.location }}</p>{% endif %}
+        {% if item.description %}<p class="journey-desc">{{ item.description }}</p>{% endif %}
+        {% if item.tags %}
+          <div class="journey-tags">
+            {% for tag in item.tags %}<span class="journey-tag">{{ tag }}</span>{% endfor %}
+          </div>
+        {% endif %}
+      </div>
+    </div>
+  {% endfor %}
+</div>

@@ -1,0 +1,16 @@
+{% comment %}Research highlight cards (data: _data/highlights.yml){% endcomment %}
+<div class="highlights-grid">
+  {% for item in site.data.highlights %}
+    <div class="highlight-card">
+      {% if item.icon %}
+        <div class="highlight-icon"><i class="{{ item.icon }}"></i></div>
+      {% endif %}
+      <h3 class="highlight-title">{{ item.title }}</h3>
+      {% if item.venue %}<p class="highlight-venue">{{ item.venue }}</p>{% endif %}
+      {% if item.description %}<p class="highlight-desc">{{ item.description }}</p>{% endif %}
+      {% if item.url %}
+        <a class="highlight-link" href="{{ item.url }}">{{ item.link_text | default: "Read more" }} <i class="fa-solid fa-arrow-right"></i></a>
+      {% endif %}
+    </div>
+  {% endfor %}
+</div>

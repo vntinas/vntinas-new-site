@@ -1,0 +1,32 @@
+# Academic journey timeline shown on the about page.
+# Rendered by _includes/journey.liquid as a compact vertical timeline.
+# Fields: role (required), org, location, dates, description, url (links the org), tags (list)
+
+- role: Assistant Professor (Tenure-Track)
+  org: Aalborg University
+  url: https://www.en.aau.dk
+  location: Copenhagen, Denmark
+  dates: 2025 – Present
+
+- role: Research Associate
+  org: Technische Universität Dresden
+  url: https://tu-dresden.de
+  location: Dresden, Germany
+  dates: 2021 – 2025
+
+- role: Ph.D. in Electronic Engineering / Electrical & Computer Engineering
+  org: Universitat Politècnica de Catalunya & Democritus University of Thrace
+  location: Barcelona, Spain & Xanthi, Greece
+  dates: 2017 – 2022
+
+- role: M.Sc. in Microelectronics and Computer Systems
+  org: Democritus University of Thrace
+  url: https://ee.duth.gr
+  location: Xanthi, Greece
+  dates: 2015 – 2017
+
+- role: Diploma in Electrical and Computer Engineering
+  org: Democritus University of Thrace
+  url: https://ee.duth.gr
+  location: Xanthi, Greece
+  dates: 2010 – 2015

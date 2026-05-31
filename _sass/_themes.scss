@@ -10,8 +10,8 @@
   --global-code-bg-color: #{v.$code-bg-color-light};
   --global-text-color: #{v.$black-color};
   --global-text-color-light: #{v.$grey-color};
-  --global-theme-color: #003d73; // AAU primary blue
-  --global-hover-color: #003d73;
+  --global-theme-color: #211a52; // AAU primary dark blue
+  --global-hover-color: #211a52;
   --global-hover-text-color: #{v.$white-color};
   --global-footer-bg-color: #{v.$grey-color-dark};
   --global-footer-text-color: #{v.$grey-color-light};
@@ -80,8 +80,8 @@ html[data-theme="dark"] {
   --global-code-bg-color: #{v.$code-bg-color-dark};
   --global-text-color: #{v.$grey-color-light};
   --global-text-color-light: #{v.$grey-color};
-  --global-theme-color: #4d9de0; // AAU blue lightened for dark mode
-  --global-hover-color: #4d9de0;
+  --global-theme-color: #8f86d6; // AAU dark blue lightened for dark mode
+  --global-hover-color: #8f86d6;
   --global-hover-text-color: #{v.$white-color};
   --global-footer-bg-color: #{v.$grey-color-light};
   --global-footer-text-color: #{v.$grey-color-dark};
@@ -204,5 +204,27 @@ html[data-theme-setting="light"] {
 }
 
 #light-toggle:hover .fa-half-sun-moon::after {
+  color: var(--global-theme-color);
+}
+
+/* Role subtitle under name (about page) in accent color */
+.post-header .desc,
+.profile-subtitle,
+p.desc {
+  color: var(--global-theme-color);
+  font-weight: 500;
+}
+
+/* Name (page title) in AAU accent color */
+.post-header .post-title,
+h1.post-title {
+  color: var(--global-theme-color);
+}
+
+/* Bold/emphasis text in content in AAU accent color */
+.post strong,
+.post b,
+article strong,
+article b {
   color: var(--global-theme-color);
 }

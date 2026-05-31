@@ -1,0 +1,107 @@
+/*******************************************************************************
+ * Compact latest-news cards (homepage) — _includes/news_compact.liquid
+ ******************************************************************************/
+
+.news-compact {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin: 1rem 0 1.5rem;
+}
+
+.news-compact-card {
+  display: flex;
+  align-items: baseline;
+  gap: 0.9rem;
+  padding: 0.6rem 0.9rem;
+  border: 1px solid var(--global-divider-color);
+  border-radius: 8px;
+  background-color: var(--global-card-bg-color);
+  text-decoration: none;
+  transition:
+    border-color 0.2s ease-in-out,
+    box-shadow 0.2s ease-in-out;
+
+  &:hover {
+    border-color: var(--global-theme-color);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.06);
+    text-decoration: none;
+
+    .news-compact-text {
+      color: var(--global-theme-color);
+    }
+  }
+}
+
+.news-compact-date {
+  flex: 0 0 auto;
+  min-width: 6.5rem;
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: var(--global-theme-color);
+}
+
+.news-compact-text {
+  font-size: 0.85rem;
+  line-height: 1.45;
+  color: var(--global-text-color);
+  transition: color 0.2s ease-in-out;
+}
+
+.news-compact-all {
+  align-self: flex-start;
+  margin-top: 0.2rem;
+  font-size: 0.82rem;
+  font-weight: 500;
+  color: var(--global-theme-color);
+  text-decoration: none;
+
+  i {
+    font-size: 0.75rem;
+    transition: transform 0.2s ease-in-out;
+  }
+
+  &:hover i {
+    transform: translateX(3px);
+  }
+}
+
+/* Sidebar variant — narrow profile column, date stacked above text */
+.news-compact--sidebar {
+  gap: 0.4rem;
+
+  .news-compact-card {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.15rem;
+    padding: 0.5rem 0.7rem;
+  }
+
+  .news-compact-date {
+    min-width: 0;
+    font-size: 0.72rem;
+  }
+
+  .news-compact-text {
+    font-size: 0.8rem;
+    line-height: 1.4;
+  }
+
+  .news-compact-all {
+    font-size: 0.78rem;
+  }
+}
+
+/* Sidebar news wrapper under the profile photo */
+.sidebar-news {
+  margin-top: 1.2rem;
+}
+
+.sidebar-news-title {
+  margin: 0 0 0.6rem;
+  font-size: 1.3rem;
+
+  a {
+    color: inherit;
+  }
+}

@@ -3,6 +3,7 @@ layout: post
 date: 2025-02-01
 inline: true
 related_posts: false
+short: Seven papers presented at IEEE ISCAS 2025
 ---
 
 Seven papers co-authored with colleagues from TU Dresden and beyond were presented at the

@@ -1,0 +1,9 @@
+{% comment %}Research-interest pills (data: _data/interests.yml){% endcomment %}
+<div class="interests-block">
+  <p class="interests-title">Research Interests</p>
+  <div class="interests-pills">
+    {% for interest in site.data.interests %}
+      <span class="interest-pill">{{ interest }}</span>
+    {% endfor %}
+  </div>
+</div>

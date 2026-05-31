@@ -1,0 +1,14 @@
+# Footer contact block (rendered by _includes/footer.liquid).
+# Edit these values freely.
+name_suffix: # e.g. "Ph.D." — appended after the name in the footer heading
+email: vntinas@es.aau.dk
+office: Office 3.56 # TODO: replace with your real office/room number
+address_lines:
+  - Frederikskaj 12
+  - Department of Electronic Systems
+  - Aalborg University
+  - 2450 Copenhagen, Denmark
+homepage_label: Homepage @ AAU
+homepage_url: https://vbn.aau.dk/en/persons/vntinas # TODO: confirm your real AAU profile URL
+# Google Maps embed query (place name or address). Keyless embed.
+map_query: Frederikskaj 12, 2450 København, Denmark

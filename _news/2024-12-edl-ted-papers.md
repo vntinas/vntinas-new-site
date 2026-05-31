@@ -3,6 +3,7 @@ layout: post
 date: 2024-12-01
 inline: true
 related_posts: false
+short: Two new IEEE EDL & T-ED journal papers
 ---
 
 Two journal papers published in late 2024:

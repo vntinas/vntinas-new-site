@@ -1,0 +1,31 @@
+# Research highlight cards shown on the about page (rendered by _includes/highlights.liquid).
+# Fields: title (required), icon (font-awesome class), venue, description, url, link_text
+# Edit freely — descriptions/venues/links are placeholders to start.
+
+- title: Memristor Modeling
+  icon: fa-solid fa-atom
+  venue: Device Physics & Compact Models
+  description: >
+    Physics-based and variability-aware models of resistive switching devices,
+    capturing noise, drift, and device-to-device variability for circuit-level
+    simulation.
+  url:
+  link_text: Read more
+
+- title: Stochastic Resonance
+  icon: fa-solid fa-wave-square
+  venue: Noise-Enhanced Computation
+  description: >
+    Harnessing noise and random-telegraph phenomena in memristive systems, where
+    stochastic resonance improves signal detection and information processing.
+  url:
+  link_text: Read more
+
+- title: Unconventional Computing
+  icon: fa-solid fa-microchip
+  venue: CNNs · Cellular Automata
+  description: >
+    Memristive Cellular Nonlinear Networks, neuromorphic threshold-switch circuits,
+    and cellular automata for bio-inspired and probabilistic computation.
+  url:
+  link_text: Read more

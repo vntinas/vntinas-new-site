@@ -215,6 +215,65 @@ ul.task-list input[type="checkbox"] {
   }
 }
 
+/* Particles.js animated background canvas — sits behind all content */
+#particles-js {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  pointer-events: none;
+  background-color: transparent;
+}
+
+#particles-js canvas {
+  pointer-events: auto;
+}
+
+/* Rotating affiliation text (typed.js) under the profile photo */
+.typed-info-wrapper {
+  margin-top: 0.6rem;
+  // Reserve height for the tallest (3-line) string so the rotating text
+  // never reflows the content below it as strings type/delete.
+  min-height: 4.6em;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: var(--global-text-color);
+  text-align: center;
+
+  .typed-info {
+    font-weight: 500;
+  }
+
+  .typed-cursor {
+    color: var(--global-theme-color);
+  }
+}
+
+/* Compact social icon row under the role subtitle on the about page */
+.header-social {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+
+  .contact-icons {
+    font-size: 1.7rem;
+
+    a {
+      color: var(--global-text-color);
+      transition: color 0.3s ease-in-out;
+      margin-right: 0.5rem;
+
+      &:hover {
+        color: var(--global-theme-color);
+      }
+    }
+  }
+}
+
 .wechat-modal {
   display: none;
   position: fixed;

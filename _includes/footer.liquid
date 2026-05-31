@@ -1,4 +1,4 @@
-{% capture footer_contents %}
+{% capture footer_meta %}
   &copy; Copyright {{ site.time | date: '%Y' }}
   {{ site.first_name }}
   {{ site.middle_name }}
@@ -11,20 +11,59 @@
   {% endif %}
 {% endcapture %}
 
-{% if site.footer_fixed %}
-  <footer class="fixed-bottom" role="contentinfo">
-    <div class="container mt-0">
-      {{ footer_contents }}
-    </div>
-  </footer>
-{% else %}
-  <footer class="sticky-bottom mt-5" role="contentinfo">
-    {% if site.newsletter.enabled %}
-      {% include newsletter.liquid %}
-    {% endif %}
+{% assign c = site.data.contact %}
 
-    <div class="container">
-      {{ footer_contents }}
+<footer class="site-footer" role="contentinfo">
+  {% if c %}
+    <div class="container footer-contact">
+      <div class="footer-contact-grid">
+        <!-- Left: contact details -->
+        <div class="footer-info">
+          <h3 class="footer-name">
+            {{ site.first_name }} {{ site.middle_name }} {{ site.last_name }}{% if c.name_suffix %} {{ c.name_suffix }}{% endif %}
+          </h3>
+
+          {% if c.email %}
+            <p class="footer-line">
+              <i class="fa-solid fa-envelope fa-fw"></i>
+              <a href="mailto:{{ c.email }}">{{ c.email }}</a>
+            </p>
+          {% endif %}
+
+          <p class="footer-line footer-address">
+            <i class="fa-solid fa-location-dot fa-fw"></i>
+            <span>
+              {% if c.office %}{{ c.office }}<br>{% endif %}
+              {% for line in c.address_lines %}{{ line }}<br>{% endfor %}
+            </span>
+          </p>
+
+          {% if c.homepage_url %}
+            <p class="footer-line">
+              <i class="fa-solid fa-briefcase fa-fw"></i>
+              <a href="{{ c.homepage_url }}" target="_blank" rel="noopener noreferrer">{{ c.homepage_label | default: "Homepage" }}</a>
+            </p>
+          {% endif %}
+
+          <div class="footer-socials">{% social_links %}</div>
+
+          <p class="footer-meta">{{ footer_meta }}</p>
+        </div>
+
+        <!-- Right: map -->
+        {% if c.map_query %}
+          <div class="footer-map">
+            <iframe
+              title="Location map"
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+              src="https://www.google.com/maps?q={{ c.map_query | url_encode }}&t=k&z=18&output=embed"
+            ></iframe>
+          </div>
+        {% endif %}
+      </div>
     </div>
-  </footer>
-{% endif %}
+  {% else %}
+    <div class="container">{{ footer_meta }}</div>
+  {% endif %}
+</footer>

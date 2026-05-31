@@ -3,6 +3,7 @@ layout: post
 date: 2025-01-01
 inline: true
 related_posts: false
+short: New Adv. Electronic Materials paper on HH neuristor
 ---
 
 Paper published in **Advanced Electronic Materials**:

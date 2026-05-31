@@ -1,0 +1,29 @@
+{% comment %}Compact latest-news cards for the homepage. Limit via include.limit (default 5).{% endcomment %}
+<div class="news-compact{% if include.sidebar %} news-compact--sidebar{% endif %}">
+  {% if site.news != blank %}
+    {% assign news = site.news | reverse %}
+    {% assign news_limit = include.limit | default: 5 %}
+    {% for item in news limit: news_limit %}
+      {% if item.inline %}
+        {% assign news_link = '/news/' %}
+      {% else %}
+        {% assign news_link = item.url %}
+      {% endif %}
+      <a class="news-compact-card" href="{{ news_link | relative_url }}">
+        <span class="news-compact-date">{{ item.date | date: '%b %d, %Y' }}</span>
+        <span class="news-compact-text">
+          {% if item.short %}
+            {{ item.short | emojify }}
+          {% elsif item.inline %}
+            {{ item.content | strip_html | strip_newlines | truncate: 130 | emojify }}
+          {% else %}
+            {{ item.title }}
+          {% endif %}
+        </span>
+      </a>
+    {% endfor %}
+    <a class="news-compact-all" href="{{ '/news/' | relative_url }}">View all news <i class="fa-solid fa-arrow-right"></i></a>
+  {% else %}
+    <p>No news so far...</p>
+  {% endif %}
+</div>
