@@ -7,38 +7,47 @@ courses:
     level: BSc
     term: Fall
     url: https://moduler.aau.dk/course/2024-2025/ESNCCEB1K1
+    description: First-year foundations of computer engineering, introducing how hardware and software come together in modern computing systems.
   - title: Programming of Embedded Systems
     level: BSc
     term: Fall
     url: https://moduler.aau.dk/course/2024-2025/ESNCCTB3K1
+    description: Low-level programming of microcontroller-based systems, covering peripherals, real-time behavior, and the hardware/software interface.
   - title: Numerical Scientific Computing
     level: MSc
     term: Spring
     url: https://moduler.aau.dk/course/2025-2026/ESNAVSK2K3?lang=en-GB
+    description: Scientific computing for engineering problems with an emphasis on high-performance implementation, exploiting modern hardware, parallelism, and memory hierarchies for efficient computation.
 
 supervision:
   - title: Development of Embedded Systems
     level: BSc
     term: Fall
     url: https://moduler.aau.dk/course/2024-2025/ESNCCEB3P1
+    description: Team projects designing and building embedded systems, from requirements through hardware/software integration to a working prototype.
   - title: Security in Application Development
     level: BSc
     term: Spring
     url: https://moduler.aau.dk/course/2024-2025/ESNCCEB4P1
+    description: Projects applying secure-by-design principles to software development, addressing common vulnerabilities and mitigation strategies.
   - title: "Bachelor Project: Communication Systems"
     level: BSc
     term: Spring
     url: https://moduler.aau.dk/course/2024-2025/ESNCCEB6P4
+    description: Final BSc projects on the design and analysis of communication systems and networked applications.
   - title: "Bachelor Project: Computer Technology and Security"
     level: BSc
     term: Spring
     url: https://moduler.aau.dk/course/2024-2025/ESNCCEB6P5
+    description: Final BSc projects bridging computer technology and security, from system implementation to threat analysis.
   - title: Distributed Systems Security
     level: MSc
     term: Fall
     url: https://moduler.aau.dk/course/2025-2026/ESNCYSK1P2?lang=en-GB
+    description: Graduate projects on securing distributed systems, covering trust, communication, and resilience across networked components.
   - title: "Master Thesis: Cyber Security"
     level: MSc
     term: Spring
     role: Co-supervision
     url: https://moduler.aau.dk/course/2025-2026/ESNCYSK4P7?lang=en-GB
+    description: Co-supervision of MSc theses tackling advanced cyber security research questions.
