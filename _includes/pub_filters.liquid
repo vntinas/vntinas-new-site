@@ -1,0 +1,18 @@
+{% comment %}Filter bar for the Research page: by type and by topic (data: _data/pub_topics.yml){% endcomment %}
+<div class="pub-filters" id="pub-filters">
+  <div class="pub-filter-row" data-filter-group="type">
+    <button class="pub-filter active" data-filter-type="all">All</button>
+    <button class="pub-filter" data-filter-type="published">Published</button>
+    <button class="pub-filter" data-filter-type="preprint">Pre-prints</button>
+    <button class="pub-filter" data-filter-type="journal">Journals</button>
+    <button class="pub-filter" data-filter-type="conference">Conferences</button>
+    <button class="pub-filter" data-filter-type="chapter">Book Chapters</button>
+  </div>
+  <div class="pub-filter-row" data-filter-group="topic">
+    <button class="pub-filter active" data-filter-topic="all">All Topics</button>
+    {% for t in site.data.pub_topics %}
+      <button class="pub-filter" data-filter-topic="{{ t.slug }}">{{ t.label }}</button>
+    {% endfor %}
+  </div>
+  <p class="pub-filter-empty" id="pub-filter-empty" hidden>No publications match the selected filters.</p>
+</div>

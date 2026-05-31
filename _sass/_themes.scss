@@ -224,7 +224,10 @@ h1.post-title {
 /* Bold/emphasis text in content in AAU accent color */
 .post strong,
 .post b,
+.post-description strong,
+.post-description b,
 article strong,
 article b {
   color: var(--global-theme-color);
+  font-weight: 600;
 }

@@ -1,0 +1,48 @@
+/*******************************************************************************
+ * Publication stat cards (auto-counted) — _includes/pub_stats.liquid
+ ******************************************************************************/
+
+.pub-stats {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+  margin: 0.5rem 0 2rem;
+
+  @media (max-width: 768px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.pub-stat {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 1rem 0.8rem;
+  border: 1px solid var(--global-divider-color);
+  border-radius: 10px;
+  background-color: var(--global-card-bg-color);
+  transition:
+    box-shadow 0.2s ease-in-out,
+    transform 0.2s ease-in-out;
+
+  &:hover {
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+    transform: translateY(-2px);
+  }
+}
+
+.pub-stat-num {
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 1.1;
+  color: var(--global-theme-color);
+}
+
+.pub-stat-label {
+  margin-top: 0.3rem;
+  font-size: 0.8rem;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  color: var(--global-text-color-light);
+}

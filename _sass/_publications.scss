@@ -166,11 +166,22 @@
       }
 
       div.abstract.hidden {
-        border: dashed 1px var(--global-bg-color);
+        border: none;
       }
 
       div.abstract.hidden.open {
-        border-color: var(--global-text-color);
+        margin-top: 0.6rem;
+        border: none;
+        border-left: 3px solid var(--global-theme-color);
+        border-radius: 8px;
+        background-color: var(--global-code-bg-color);
+
+        p {
+          margin: 0;
+          padding: 0.9rem 1.1rem;
+          line-height: 1.55;
+          color: var(--global-text-color);
+        }
       }
     }
     div.award.hidden {

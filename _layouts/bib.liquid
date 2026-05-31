@@ -1,6 +1,20 @@
 ---
 ---
-<div class="row">
+{% comment %}Filter metadata: type, publication status, and topic tags (from optional `topics` bibtex field).{% endcomment %}
+{% if entry.type == 'article' %}
+  {% assign pub_type = 'journal' %}
+{% elsif entry.type == 'incollection' %}
+  {% assign pub_type = 'chapter' %}
+{% else %}
+  {% assign pub_type = 'conference' %}
+{% endif %}
+{% if entry.preprint or entry.arxiv %}
+  {% assign pub_status = 'preprint' %}
+{% else %}
+  {% assign pub_status = 'published' %}
+{% endif %}
+{% assign pub_topics = entry.topics | default: '' | downcase | replace: ', ', ' ' | replace: ',', ' ' %}
+<div class="row publication-entry" data-pub-type="{{ pub_type }}" data-pub-status="{{ pub_status }}" data-pub-topics="{{ pub_topics }}">
   {% if site.enable_publication_thumbnails %}
     <div class="col col-sm-2 abbr">
       {%- if entry.abbr -%}
@@ -25,23 +39,25 @@
           <abbr class="badge rounded w-100">{{ entry.abbr }}</abbr>
         {% endif %}
       {% endif %}
-      {% if entry.preview %}
-        {% if entry.preview contains '://' %}
-          <img class="preview z-depth-1 rounded" src="{{ entry.preview }}">
-        {% else %}
-          {% assign entry_path = entry.preview | prepend: '/assets/img/publication_preview/' %}
-          {%
-            include figure.liquid
-            loading="eager"
-            path=entry_path
-            sizes = "200px"
-            class="preview z-depth-1 rounded"
-            zoomable=true
-            avoid_scaling=true
-            alt=entry.preview
-          %}
+      {% unless entry.preview contains 'placeholder' %}
+        {% if entry.preview %}
+          {% if entry.preview contains '://' %}
+            <img class="preview z-depth-1 rounded" src="{{ entry.preview }}">
+          {% else %}
+            {% assign entry_path = entry.preview | prepend: '/assets/img/publication_preview/' %}
+            {%
+              include figure.liquid
+              loading="eager"
+              path=entry_path
+              sizes = "200px"
+              class="preview z-depth-1 rounded"
+              zoomable=true
+              avoid_scaling=true
+              alt=entry.preview
+            %}
+          {% endif %}
         {% endif %}
-      {% endif %}
+      {% endunless %}
     </div>
   {% endif %}
 
@@ -195,7 +211,7 @@
         </a>
       {% endif %}
       {% if entry.abstract %}
-        <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
+        <a class="abstract btn btn-sm z-depth-0" role="button">Abstract</a>
       {% endif %}
       {% if entry.doi %}
         <a href="https://doi.org/{{ entry.doi }}" class="btn btn-sm z-depth-0" role="button">DOI</a>

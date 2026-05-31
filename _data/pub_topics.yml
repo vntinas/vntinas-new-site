@@ -1,0 +1,16 @@
+# Topic filter buttons for the Research page.
+# `slug` must match the keyword you put in a paper's `topics` bibtex field.
+# Add a paper to a topic by adding e.g.  topics = {memristor-modeling, stochastic-resonance}
+# to its entry in _bibliography/papers.bib.
+- slug: memristor-modeling
+  label: Memristor Modeling
+- slug: stochastic-resonance
+  label: Stochastic Resonance
+- slug: unconventional-computing
+  label: Unconventional Computing
+- slug: neuromorphic
+  label: Neuromorphic Circuits
+- slug: cnn
+  label: Cellular Nonlinear Networks
+- slug: device-variability
+  label: Device Variability

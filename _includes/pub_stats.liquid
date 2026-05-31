@@ -1,0 +1,22 @@
+{% comment %}Auto-counted publication stat cards (data: _plugins/publication-stats.rb){% endcomment %}
+{% assign s = site.pub_stats %}
+{% if s %}
+  <div class="pub-stats">
+    <div class="pub-stat">
+      <span class="pub-stat-num">{{ s.total }}</span>
+      <span class="pub-stat-label">Total Publications</span>
+    </div>
+    <div class="pub-stat">
+      <span class="pub-stat-num">{{ s.article }}</span>
+      <span class="pub-stat-label">Journal Articles</span>
+    </div>
+    <div class="pub-stat">
+      <span class="pub-stat-num">{{ s.inproceedings }}</span>
+      <span class="pub-stat-label">Conference Papers</span>
+    </div>
+    <div class="pub-stat">
+      <span class="pub-stat-num">{{ s.incollection }}</span>
+      <span class="pub-stat-label">Book Chapters</span>
+    </div>
+  </div>
+{% endif %}

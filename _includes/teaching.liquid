@@ -1,0 +1,22 @@
+{% comment %}Course + supervision cards for the teaching page (data: _data/teaching.yml){% endcomment %}
+
+{% assign courses = site.data.teaching.courses %}
+{% assign supervision = site.data.teaching.supervision %}
+
+{% if courses %}
+  <h2 class="section-heading">Courses</h2>
+  <div class="teaching-grid">
+    {% for course in courses %}
+      {% include teaching_card.liquid course=course %}
+    {% endfor %}
+  </div>
+{% endif %}
+
+{% if supervision %}
+  <h2 class="section-heading">Semester Project Supervision</h2>
+  <div class="teaching-grid">
+    {% for course in supervision %}
+      {% include teaching_card.liquid course=course %}
+    {% endfor %}
+  </div>
+{% endif %}

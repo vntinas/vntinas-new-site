@@ -1,0 +1,44 @@
+# Teaching page data (rendered by _includes/teaching.liquid).
+# Two sections: `courses` and `supervision`.
+# Fields: title (required), level, term, role, description, url
+
+courses:
+  - title: Introduction to Computer Engineering
+    level: BSc
+    term: Fall
+    url: https://moduler.aau.dk/course/2024-2025/ESNCCEB1K1
+  - title: Programming of Embedded Systems
+    level: BSc
+    term: Fall
+    url: https://moduler.aau.dk/course/2024-2025/ESNCCTB3K1
+  - title: Numerical Scientific Computing
+    level: MSc
+    term: Spring
+    url: https://moduler.aau.dk/course/2025-2026/ESNAVSK2K3?lang=en-GB
+
+supervision:
+  - title: Development of Embedded Systems
+    level: BSc
+    term: Fall
+    url: https://moduler.aau.dk/course/2024-2025/ESNCCEB3P1
+  - title: Security in Application Development
+    level: BSc
+    term: Spring
+    url: https://moduler.aau.dk/course/2024-2025/ESNCCEB4P1
+  - title: "Bachelor Project: Communication Systems"
+    level: BSc
+    term: Spring
+    url: https://moduler.aau.dk/course/2024-2025/ESNCCEB6P4
+  - title: "Bachelor Project: Computer Technology and Security"
+    level: BSc
+    term: Spring
+    url: https://moduler.aau.dk/course/2024-2025/ESNCCEB6P5
+  - title: Distributed Systems Security
+    level: MSc
+    term: Fall
+    url: https://moduler.aau.dk/course/2025-2026/ESNCYSK1P2?lang=en-GB
+  - title: "Master Thesis: Cyber Security"
+    level: MSc
+    term: Spring
+    role: Co-supervision
+    url: https://moduler.aau.dk/course/2025-2026/ESNCYSK4P7?lang=en-GB

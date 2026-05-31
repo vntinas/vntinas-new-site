@@ -1,0 +1,72 @@
+/*******************************************************************************
+ * Publication filter bar (Research page) — _includes/pub_filters.liquid
+ ******************************************************************************/
+
+.section-heading {
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+.pub-section-label {
+  margin: 2rem 0 0.1rem;
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--global-text-color-light);
+}
+
+.pub-count-heading {
+  margin: 0 0 1rem;
+  font-size: 1.8rem;
+  font-weight: 700;
+
+  #pub-count {
+    margin-left: 0.3rem;
+    font-weight: 500;
+    color: var(--global-text-color-light);
+  }
+}
+
+.pub-filters {
+  margin: 0.5rem 0 1.5rem;
+}
+
+.pub-filter-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem;
+  margin-bottom: 0.6rem;
+}
+
+.pub-filter {
+  font-size: 0.8rem;
+  font-weight: 500;
+  padding: 0.28rem 0.75rem;
+  border: 1px solid var(--global-divider-color);
+  border-radius: 999px;
+  background-color: var(--global-card-bg-color);
+  color: var(--global-text-color);
+  cursor: pointer;
+  transition:
+    color 0.15s ease-in-out,
+    background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out;
+
+  &:hover {
+    border-color: var(--global-theme-color);
+    color: var(--global-theme-color);
+  }
+
+  &.active {
+    background-color: var(--global-theme-color);
+    border-color: var(--global-theme-color);
+    color: #fff;
+  }
+}
+
+.pub-filter-empty {
+  margin-top: 0.8rem;
+  font-size: 0.9rem;
+  color: var(--global-text-color-light);
+}
