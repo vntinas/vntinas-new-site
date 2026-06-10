@@ -9,8 +9,8 @@
     Physics-based and variability-aware models of resistive switching devices,
     capturing noise, drift, and device-to-device variability for circuit-level
     simulation.
-  url:
-  link_text: Read more
+  url: /publications/?topic=memristor-modeling
+  link_text: See publications
 
 - title: Stochastic Resonance
   icon: fa-solid fa-wave-square
@@ -18,8 +18,8 @@
   description: >
     Harnessing noise and random-telegraph phenomena in memristive systems, where
     stochastic resonance improves signal detection and information processing.
-  url:
-  link_text: Read more
+  url: /publications/?topic=stochastic-resonance
+  link_text: See publications
 
 - title: Unconventional Computing
   icon: fa-solid fa-microchip
@@ -27,5 +27,5 @@
   description: >
     Memristive Cellular Nonlinear Networks, neuromorphic threshold-switch circuits,
     and cellular automata for bio-inspired and probabilistic computation.
-  url:
-  link_text: Read more
+  url: /publications/?topic=unconventional-computing
+  link_text: See publications

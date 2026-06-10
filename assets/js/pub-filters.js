@@ -79,6 +79,24 @@
       }
       apply();
     });
+
+    // Preselect a topic filter from the URL (?topic=slug), e.g. linked from
+    // the homepage research-highlight cards.
+    var params = new URLSearchParams(window.location.search);
+    var wanted = params.get("topic");
+    if (wanted) {
+      var tBtn = bar.querySelector('[data-filter-topic="' + wanted + '"]');
+      if (tBtn) {
+        bar.querySelectorAll("[data-filter-topic]").forEach(function (b) {
+          b.classList.remove("active");
+        });
+        tBtn.classList.add("active");
+        state.topic = wanted;
+        apply();
+        var grid = document.querySelector(".pub-count-heading") || document.querySelector(".publications");
+        if (grid) grid.scrollIntoView({ behavior: "smooth", block: "start" });
+      }
+    }
   }
 
   if (document.readyState === "loading") {
