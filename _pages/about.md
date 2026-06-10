@@ -11,7 +11,7 @@ profile:
   image_circular: true
   typed_info:
     - Edge Computing and Networking Group
-    - Communication, Media & Information Technologies (CMI) Section
+    - Communication, Media and Information Technologies (CMI) Section
     - Electronic Systems Department
     - Aalborg University
     - Copenhagen, Denmark

@@ -2,6 +2,38 @@
   url: https://advanced.onlinelibrary.wiley.com/journal/2199160x
   color: "#0f766e"
 
+"ACS Nano":
+  url: https://pubs.acs.org/journal/ancac3
+  color: "#be123c"
+
+"JETCAS":
+  url: https://ieee-cas.org/publication/ieee-journal-emerging-and-selected-topics-circuits-and-systems-jetcas
+  color: "#b91c1c"
+
+"OJ-NANO":
+  url: https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=8782710
+  color: "#2563eb"
+
+"AICAS":
+  url: https://aicas2025.org/
+  color: "#7c3aed"
+
+"IJCNN":
+  url: https://www.ijcnn.org/
+  color: "#0891b2"
+
+"ICM":
+  url: https://ieeexplore.ieee.org/xpl/conhome/1002441/all-proceedings
+  color: "#4f46e5"
+
+"PACET":
+  url: https://pacet2026.uop.gr/
+  color: "#ea580c"
+
+"Book":
+  url:
+  color: "#475569"
+
 "AEU":
   url: https://www.sciencedirect.com/journal/aeu-international-journal-of-electronics-and-communications
   color: "#3b82f6"
