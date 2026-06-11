@@ -14,7 +14,28 @@
   {% assign pub_status = 'published' %}
 {% endif %}
 {% assign pub_topics = entry.topics | default: '' | downcase | replace: ', ', ' ' | replace: ',', ' ' %}
-<div class="row publication-entry" data-pub-type="{{ pub_type }}" data-pub-status="{{ pub_status }}" data-pub-topics="{{ pub_topics }}">
+{% assign pub_citations = 0 %}
+{% if entry.google_scholar_id %}
+  {% assign gs_lookup_key = site.data.socials.scholar_userid | append: ':' | append: entry.google_scholar_id %}
+  {% if site.data.citations.papers[gs_lookup_key] %}
+    {% assign pub_citations = site.data.citations.papers[gs_lookup_key].citations %}
+  {% else %}
+    {% for paper in site.data.citations.papers %}
+      {% if paper[0] contains entry.google_scholar_id %}
+        {% assign pub_citations = paper[1].citations %}
+        {% break %}
+      {% endif %}
+    {% endfor %}
+  {% endif %}
+{% endif %}
+<div
+  class="row publication-entry"
+  data-pub-type="{{ pub_type }}"
+  data-pub-status="{{ pub_status }}"
+  data-pub-topics="{{ pub_topics }}"
+  data-pub-year="{{ entry.year }}"
+  data-pub-citations="{{ pub_citations }}"
+>
   {% if site.enable_publication_thumbnails %}
     <div class="col col-sm-2 abbr">
       {%- if entry.abbr -%}
@@ -274,6 +295,30 @@
       {% if entry.website %}
         <a href="{{ entry.website }}" class="btn btn-sm z-depth-0" role="button">Website</a>
       {% endif %}
+      {% if site.enable_publication_badges.google_scholar and entry.google_scholar_id %}
+        {% assign gs_count = 0 %}
+        {% assign gs_key = site.data.socials.scholar_userid | append: ':' | append: entry.google_scholar_id %}
+        {% if site.data.citations.papers[gs_key] %}
+          {% assign gs_count = site.data.citations.papers[gs_key].citations %}
+        {% else %}
+          {% for paper in site.data.citations.papers %}
+            {% if paper[0] contains entry.google_scholar_id %}
+              {% assign gs_count = paper[1].citations %}
+              {% break %}
+            {% endif %}
+          {% endfor %}
+        {% endif %}
+        <a
+          href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user={{ site.data.socials.scholar_userid }}&citation_for_view={{ site.data.socials.scholar_userid }}:{{ entry.google_scholar_id }}"
+          class="btn btn-sm z-depth-0 gscholar-btn"
+          role="button"
+          target="_blank"
+          rel="external nofollow noopener"
+          title="{{ gs_count }} Google Scholar citations"
+        >
+          <i class="ai ai-google-scholar"></i> {{ gs_count }}
+        </a>
+      {% endif %}
     </div>
     {% if site.enable_publication_badges %}
       {% assign entry_has_altmetric_badge = false %}
@@ -286,10 +331,8 @@
         {% assign entry_has_dimensions_badge = true %}
       {% endif %}
 
+      {% comment %}Google Scholar shown as a compact button in .links instead of a badge here.{% endcomment %}
       {% assign entry_has_google_scholar_badge = false %}
-      {% if entry.google_scholar_id %}
-        {% assign entry_has_google_scholar_badge = true %}
-      {% endif %}
 
       {% assign entry_has_inspirehep_badge = false %}
       {% if entry.inspirehep_id %}

@@ -16,6 +16,14 @@
   color: var(--global-text-color-light);
 }
 
+.pub-count-row {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
 .pub-count-heading {
   margin: 0 0 1rem;
   font-size: 1.8rem;
@@ -25,6 +33,44 @@
     margin-left: 0.3rem;
     font-weight: 500;
     color: var(--global-text-color-light);
+  }
+}
+
+.pub-sort {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+
+  .pub-sort-label {
+    font-size: 0.8rem;
+    color: var(--global-text-color-light);
+    margin-right: 0.1rem;
+  }
+}
+
+.pub-sort-btn {
+  font-size: 0.8rem;
+  font-weight: 500;
+  padding: 0.25rem 0.7rem;
+  border: 1px solid var(--global-divider-color);
+  border-radius: 999px;
+  background-color: var(--global-card-bg-color);
+  color: var(--global-text-color);
+  cursor: pointer;
+  transition:
+    color 0.15s ease-in-out,
+    background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out;
+
+  &:hover {
+    border-color: var(--global-theme-color);
+    color: var(--global-theme-color);
+  }
+
+  &.active {
+    background-color: var(--global-theme-color);
+    border-color: var(--global-theme-color);
+    color: #fff;
   }
 }
 

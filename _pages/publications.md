@@ -14,7 +14,14 @@ nav_order: 2
 {% include highlights.liquid %}
 
 <p class="pub-section-label">Publications</p>
-<h2 class="pub-count-heading">Papers <span id="pub-count">{{ site.pub_stats.total }}</span></h2>
+<div class="pub-count-row">
+  <h2 class="pub-count-heading">Papers <span id="pub-count">{{ site.pub_stats.total }}</span></h2>
+  <div class="pub-sort" id="pub-sort">
+    <span class="pub-sort-label">Sort:</span>
+    <button class="pub-sort-btn active" data-sort="newest">Newest</button>
+    <button class="pub-sort-btn" data-sort="citations">Citations</button>
+  </div>
+</div>
 
 {% include pub_filters.liquid %}
 

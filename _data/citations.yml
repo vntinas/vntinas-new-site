@@ -1,3 +1,463 @@
 metadata:
-  last_updated: null
-papers: {}
+  last_updated: '2026-06-11'
+papers:
+  RCeprCUAAAAJ:-f6ydRqryjwC:
+    citations: 5
+    title: Early approach of qubit state representation with memristors
+    year: '2018'
+  RCeprCUAAAAJ:08ZZubdj9fEC:
+    citations: 2
+    title: Stochastic Templates and Noise Dynamics in Memristor Cellular Nonlinear Networks
+    year: '2025'
+  RCeprCUAAAAJ:1qzjygNMrQYC:
+    citations: 0
+    title: '6G computing for sensing: universal memcomputing using memristor cellular neural networks'
+    year: '2026'
+  RCeprCUAAAAJ:1sJd4Hv_s6UC:
+    citations: 4
+    title: Experimental verification of uncoupled memristive cellular nonlinear network by processing the edge detection task
+    year: '2023'
+  RCeprCUAAAAJ:2P1L_qKh6hAC:
+    citations: 29
+    title: In-memory-computing realization with a photodiode/memristor based vision sensor
+    year: '2021'
+  RCeprCUAAAAJ:35N4QoGY0k4C:
+    citations: 11
+    title: Multifunctional spatially-expanded logic gate for unconventional computations with memristor-based oscillators
+    year: '2021'
+  RCeprCUAAAAJ:4DMP91E08xMC:
+    citations: 46
+    title: Memristor crossbar for adaptive synchronization
+    year: '2017'
+  RCeprCUAAAAJ:4JMBOYKVnBMC:
+    citations: 5
+    title: Mimicking physarum space exploration with networks of memristive oscillators
+    year: '2019'
+  RCeprCUAAAAJ:4OULZ7Gr8RgC:
+    citations: 2
+    title: Stochastic resonance effect in binary STDP performed by RRAM devices
+    year: '2022'
+  RCeprCUAAAAJ:4TOpqqG69KYC:
+    citations: 77
+    title: Parallel fuzzy cellular automata for data-driven simulation of wildfire spreading
+    year: '2017'
+  RCeprCUAAAAJ:4fKUyHm3Qg0C:
+    citations: 2
+    title: Edge of chaos induces a Hopf bifurcation in a bio-inspired thermally-activated memristor oscillator
+    year: '2025'
+  RCeprCUAAAAJ:5Ul4iDaHHb8C:
+    citations: 2
+    title: Attention-driven PCM-based In-Memory Computing for Smart Vision Systems
+    year: '2025'
+  RCeprCUAAAAJ:5ugPr518TE4C:
+    citations: 0
+    title: ReRAM Cell Model Simplification to Enhance Simulation Time Efficiency
+    year: '2024'
+  RCeprCUAAAAJ:70eg2SAEIzsC:
+    citations: 11
+    title: Memristor-based probabilistic cellular automata
+    year: '2021'
+  RCeprCUAAAAJ:738O_yMBCRsC:
+    citations: 0
+    title: Chemical Wave Computing from Labware to Electrical Systems. Electronics 2022, 11, 1683
+    year: '2022'
+  RCeprCUAAAAJ:8AbLer7MMksC:
+    citations: 1
+    title: "Live Demonstration: 4\xD7 4 Memristive Cellular Nonlinear Network in EDGE detection operation"
+    year: '2025'
+  RCeprCUAAAAJ:9ZlFYXVOiuMC:
+    citations: 0
+    title: Towards an analytical description of a TaO memristor
+    year: '2018'
+  RCeprCUAAAAJ:B3FOqHPlNUQC:
+    citations: 0
+    title: Dynamical analysis of novel Memristor Cellular Nonlinear Network cell topologies
+    year: '2025'
+  RCeprCUAAAAJ:BqipwSGYUEgC:
+    citations: 29
+    title: Memristive learning cellular automata for edge detection
+    year: '2021'
+  RCeprCUAAAAJ:BrmTIyaxlBUC:
+    citations: 0
+    title: Closed-Loop CBRAM Crossbar System Toward Hardware Acceleration of Quantum Algorithms
+    year: '2025'
+  RCeprCUAAAAJ:CHSYGLWDkRkC:
+    citations: 11
+    title: High frequency response of volatile memristors
+    year: '2024'
+  RCeprCUAAAAJ:D03iK_w7-QYC:
+    citations: 11
+    title: 'MemCA: All-memristor design for deterministic and probabilistic cellular automata hardware realization'
+    year: '2023'
+  RCeprCUAAAAJ:D_sINldO8mEC:
+    citations: 0
+    title: 'A Phoenix in the Making: Memristors and the Resurgence of Cellular Nonlinear Networks'
+    year: '2025'
+  RCeprCUAAAAJ:EUQCXRtRnyEC:
+    citations: 3
+    title: Time-based memristor crossbar array programming for stochastic computing parallel sequence generation
+    year: '2023'
+  RCeprCUAAAAJ:GnPB-g6toBAC:
+    citations: 22
+    title: True Random Number Generator Based on Multi-State Silicon Nitride Memristor Entropy Sources Combination
+    year: '2021'
+  RCeprCUAAAAJ:HDshCWvjkbEC:
+    citations: 5
+    title: A pragmatic gaze on stochastic resonance based variability tolerant memristance enhancement
+    year: '2019'
+  RCeprCUAAAAJ:HoB7MX3m0LUC:
+    citations: 28
+    title: Toward simplified physics-based memristor modeling of valence change mechanism devices
+    year: '2022'
+  RCeprCUAAAAJ:IWHjjKOFINEC:
+    citations: 22
+    title: A complete analytical solution for the on and off dynamic equations of a TaO memristor
+    year: '2018'
+  RCeprCUAAAAJ:J-pR_7NvFogC:
+    citations: 2
+    title: Technology Roadmap of Bioinspired Computing Hardware
+    year: '2026'
+  RCeprCUAAAAJ:JV2RwH3_ST0C:
+    citations: 18
+    title: Probabilistic Resistive Switching Device modeling based on Markov Jump processes
+    year: '2020'
+  RCeprCUAAAAJ:J_g5lzvAfSwC:
+    citations: 9
+    title: Emergence of chimera states with re-programmable memristor crossbar arrays
+    year: '2021'
+  RCeprCUAAAAJ:K3LRdlH-MEoC:
+    citations: 2
+    title: Dynamic Analysis of the Effect of the Device-to-Device Variability of Real-World Memristors on the Implementation of Uncoupled Memristive Cellular Nonlinear Networks
+    year: '2025'
+  RCeprCUAAAAJ:KxtntwgDAa4C:
+    citations: 3
+    title: Employing Vector Field Techniques on the Analysis of Memristor Cellular Nonlinear Networks Cell Dynamics
+    year: '2023'
+  RCeprCUAAAAJ:L8Ckcad2t8MC:
+    citations: 14
+    title: Memristive cellular automata for modeling of epileptic brain activity
+    year: '2018'
+  RCeprCUAAAAJ:LPZeul_q3PIC:
+    citations: 0
+    title: A Simplified Analysis of Threshold Switch Based Neuron Circuits
+    year: '2025'
+  RCeprCUAAAAJ:M3ejUd6NZC8C:
+    citations: 51
+    title: A digital memristor emulator for FPGA-based artificial neural networks
+    year: '2016'
+  RCeprCUAAAAJ:NaGl4SEjCO4C:
+    citations: 7
+    title: Memristor crossbar design framework for quantum computing
+    year: '2021'
+  RCeprCUAAAAJ:NhqRSupF_l8C:
+    citations: 8
+    title: 'Memristors in cellular-automata-based computing: A review'
+    year: '2023'
+  RCeprCUAAAAJ:O3NaXMp0MMsC:
+    citations: 33
+    title: Multi-level resistance switching and random telegraph noise analysis of nitride based memristors
+    year: '2021'
+  RCeprCUAAAAJ:OU6Ihb5iCvQC:
+    citations: 3
+    title: Experimental evaluation of silicon nitride memristors as coupling elements for chimera states in chaotic oscillator networks
+    year: '2024'
+  RCeprCUAAAAJ:P5F9QuxV20EC:
+    citations: 2
+    title: Stochastic template in cellular nonlinear networks modeling memristor induced synaptic noise
+    year: '2023'
+  RCeprCUAAAAJ:QIV2ME_5wuYC:
+    citations: 70
+    title: Experimental study of artificial neural networks using a digital memristor simulator
+    year: '2018'
+  RCeprCUAAAAJ:RGFaLdJalmkC:
+    citations: 24
+    title: A new 1P1R image sensor with in-memory computing properties based on silicon nitride devices
+    year: '2021'
+  RCeprCUAAAAJ:RHpTSmoSYBkC:
+    citations: 0
+    title: Memristive Circuits for the Simulation of the Earthquake Process
+    year: '2019'
+  RCeprCUAAAAJ:RYcK_YlVTxYC:
+    citations: 21
+    title: "Cellular automata implementation of Oregonator simulating light-sensitive Belousov\u2013Zhabotinsky medium."
+    year: '2021'
+  RCeprCUAAAAJ:SP6oXDckpogC:
+    citations: 0
+    title: Explaining a Recent Observation of Bistability in the Oscillatory Response of a Pulse-Driven ReRAM
+    year: '2023'
+  RCeprCUAAAAJ:SeFeTyx0c_EC:
+    citations: 0
+    title: Harnessing memristor circuits and device variability in emergent computing applications
+    year: '2022'
+  RCeprCUAAAAJ:TFP_iSt0sucC:
+    citations: 7
+    title: 'Memristive Learning Cellular Automata: Theory and Applications'
+    year: '2020'
+  RCeprCUAAAAJ:TQgYirikUcIC:
+    citations: 15
+    title: Wave computing with passive memristive networks
+    year: '2019'
+  RCeprCUAAAAJ:Tiz5es2fbqcC:
+    citations: 1
+    title: Implementation of a Multiclass Support Vector Machine on a Differential Memristor Crossbar
+    year: '2024'
+  RCeprCUAAAAJ:UxriW0iASnsC:
+    citations: 3
+    title: "Stochastic Resonance in HfO\u2082-Based Memristors: Impact of External Noise on the Binary STDP Protocol"
+    year: '2024'
+  RCeprCUAAAAJ:V3AGJWp-ZtQC:
+    citations: 0
+    title: Temporal Drift-Regularization and Hyperparameter Optimization for Phase-Change Memory-based Neural Network Applications
+    year: '2025'
+  RCeprCUAAAAJ:VOx2b1Wkg3QC:
+    citations: 4
+    title: NDR Effects in a Locally-Active Memristor Induce Small-Signal Amplification in a Simple Cell
+    year: '2025'
+  RCeprCUAAAAJ:Wp0gIr-vW9MC:
+    citations: 18
+    title: "Closed\u2010form analytical solution for on\u2010switching dynamics in a TaO memristor"
+    year: '2017'
+  RCeprCUAAAAJ:XiSMed-E-HIC:
+    citations: 0
+    title: Experimental Evidence for Local Fading Memory Effects in TaOx ReRAM Cells
+    year: '2024'
+  RCeprCUAAAAJ:XiVPGOgt02cC:
+    citations: 0
+    title: 'Resistive memory modeling: a generalized stochastic framework consolidating variability, parasitic, and temperature effects'
+    year: '2026'
+  RCeprCUAAAAJ:YFjsv_pBGBYC:
+    citations: 18
+    title: Quantum mechanical model for filament formation in metal-insulator-metal memristors
+    year: '2021'
+  RCeprCUAAAAJ:ZHo1McVdvXMC:
+    citations: 10
+    title: Chemical wave computing from labware to electrical systems
+    year: '2022'
+  RCeprCUAAAAJ:ZeXyd9-uunAC:
+    citations: 12
+    title: Coupled physarum-inspired memristor oscillators for neuron-like operations
+    year: '2018'
+  RCeprCUAAAAJ:_kc_bZDykSQC:
+    citations: 42
+    title: Oscillation-based slime mould electronic circuit model for maze-solving computations
+    year: '2017'
+  RCeprCUAAAAJ:_xSYboBqXhAC:
+    citations: 3
+    title: Dynamics of a memristive bridge with valence change mechanism (VCM) devices
+    year: '2023'
+  RCeprCUAAAAJ:a0OBvERweLwC:
+    citations: 2
+    title: Analytical Study of the Fading Memory Phenomenon in a TaOx Memristor Model
+    year: '2022'
+  RCeprCUAAAAJ:abG-DnoFyZgC:
+    citations: 13
+    title: A simplified variability-aware vcm memristor model for efficient circuit simulation
+    year: '2023'
+  RCeprCUAAAAJ:aqlVkmm33-oC:
+    citations: 29
+    title: Modeling Physarum space exploration using memristors
+    year: '2017'
+  RCeprCUAAAAJ:b0M2c_1WBrUC:
+    citations: 6
+    title: 'Multitasking and memcomputing in memristor cellular nonlinear networks: Insights into the underlying mechanisms'
+    year: '2023'
+  RCeprCUAAAAJ:bEWYMUwI8FkC:
+    citations: 15
+    title: 'Memristive oscillatory circuits for resolution of NP-complete logic puzzles: Sudoku case'
+    year: '2020'
+  RCeprCUAAAAJ:bFI3QPDXJZMC:
+    citations: 6
+    title: Design and analysis of isolated voltage-mode memristor cellular nonlinear network cells
+    year: '2023'
+  RCeprCUAAAAJ:blknAaTinKkC:
+    citations: 30
+    title: "Power-efficient noise-induced reduction of ReRAM cell\u2019s temporal variability effects"
+    year: '2020'
+  RCeprCUAAAAJ:bnK-pcrLprsC:
+    citations: 0
+    title: Image Processing Using VCM based Memristor Cellular Nonlinear Networks
+    year: '2023'
+  RCeprCUAAAAJ:cFHS6HbyZ2cC:
+    citations: 12
+    title: Wave cellular automata for computing applications
+    year: '2022'
+  RCeprCUAAAAJ:dfsIfKJdRG4C:
+    citations: 19
+    title: Compact thermo-diffusion based physical memristor model
+    year: '2022'
+  RCeprCUAAAAJ:dhFuZR0502QC:
+    citations: 14
+    title: 1-D memristor-based cellular automaton for pseudo-random number generation
+    year: '2017'
+  RCeprCUAAAAJ:dshw04ExmUIC:
+    citations: 1
+    title: Frequency Dependent Bistability in a Volatile Threshold Switch
+    year: '2024'
+  RCeprCUAAAAJ:eJXPG6dFmWUC:
+    citations: 1
+    title: Drift-Aware Regularization for Long-Term Stability in Phase-Change Memory Based Neural Network Implementations
+    year: '2025'
+  RCeprCUAAAAJ:eflP2zaiRacC:
+    citations: 1
+    title: Analysis and Design of Multitasking Memristor Cellular Nonlinear Networks
+    year: '2025'
+  RCeprCUAAAAJ:f2IySw72cVMC:
+    citations: 4
+    title: Sneak-path effect on chimera states of memristor-coupled Chua circuit networks
+    year: '2023'
+  RCeprCUAAAAJ:fPk4N6BV_jEC:
+    citations: 23
+    title: Simulation of low power self-selective memristive neural networks for in situ digital and analogue artificial neural network applications
+    year: '2022'
+  RCeprCUAAAAJ:fQNAKQ3IYiAC:
+    citations: 0
+    title: Memristor Resistance State Tuning with High-Frequency Periodic Inputs
+    year: '2025'
+  RCeprCUAAAAJ:g5m5HwL7SMYC:
+    citations: 7
+    title: 'Memristive oscillatory networks for computing: The chemical wave propagation paradigm'
+    year: '2021'
+  RCeprCUAAAAJ:hC7cP41nSMkC:
+    citations: 0
+    title: Analytical DC model of a TaO memristor
+    year: '2018'
+  RCeprCUAAAAJ:hMod-77fHWUC:
+    citations: 9
+    title: Implementation and optimization of chemical logic gates using memristive cellular automata
+    year: '2020'
+  RCeprCUAAAAJ:isC4tDSrTZIC:
+    citations: 9
+    title: 'Cellular automata coupled with memristor devices: A fine unconventional computing paradigm'
+    year: '2020'
+  RCeprCUAAAAJ:j3f4tGmQtD8C:
+    citations: 8
+    title: Noise-induced performance enhancement of variability-aware memristor networks
+    year: '2019'
+  RCeprCUAAAAJ:kRWSkSYxWN8C:
+    citations: 0
+    title: A Compact Memristor Model for Hafnium 1T1R ReRAM Devices
+    year: Unknown Year
+  RCeprCUAAAAJ:k_IJM867U9cC:
+    citations: 9
+    title: Experimental investigation of memristance enhancement
+    year: '2019'
+  RCeprCUAAAAJ:l7t_Zn2s7bgC:
+    citations: 24
+    title: "Edge of chaos theory unveils the first and simplest ever reported Hodgkin\u2013Huxley neuristor"
+    year: '2025'
+  RCeprCUAAAAJ:lSLTfruPkqcC:
+    citations: 22
+    title: "Light sensitive Belousov\u2013Zhabotinsky medium accommodates multiple logic gates"
+    year: '2021'
+  RCeprCUAAAAJ:ldfaerwXgEUC:
+    citations: 24
+    title: Memristor crossbar arrays performing quantum algorithms
+    year: '2021'
+  RCeprCUAAAAJ:mB3voiENLucC:
+    citations: 5
+    title: Future and emergent materials and devices for resistive switching
+    year: '2018'
+  RCeprCUAAAAJ:mVmsd5A6BfQC:
+    citations: 14
+    title: Transformation techniques applied to a TaO memristor model to enable stable device simulations
+    year: '2017'
+  RCeprCUAAAAJ:maZDTaKrznsC:
+    citations: 3
+    title: Plasma modified silicon nitride resistive switching memories
+    year: '2019'
+  RCeprCUAAAAJ:mvPsJ3kp5DgC:
+    citations: 3
+    title: The Hodgkin-Huxley Neuristor
+    year: '2025'
+  RCeprCUAAAAJ:nb7KW1ujOQ8C:
+    citations: 5
+    title: Noise-induced homeostasis in memristor-based neuromorphic systems
+    year: '2024'
+  RCeprCUAAAAJ:ns9cj8rnVeAC:
+    citations: 61
+    title: Understanding the role of defects in silicon nitride-based resistive switching memories through oxygen doping
+    year: '2021'
+  RCeprCUAAAAJ:p2g8aNsByqUC:
+    citations: 0
+    title: Stochastic resonance effect in binary STDP performed by RRAM devices
+    year: '2022'
+  RCeprCUAAAAJ:pqnbT2bcN3wC:
+    citations: 4
+    title: Margolus chemical wave logic gate with memristive oscillatory networks
+    year: '2021'
+  RCeprCUAAAAJ:pyW8ca7W8N0C:
+    citations: 1
+    title: "Exploration of bistable oscillatory dynamics in a memristor from Forschungszentrum J\xFClich"
+    year: '2023'
+  RCeprCUAAAAJ:q3oQSFYPqjQC:
+    citations: 0
+    title: 'WaCPro: An Open-Source Application for Waveform and Crossbar Programming in Nanotechnology Research'
+    year: '2025'
+  RCeprCUAAAAJ:qUcmZB5y_30C:
+    citations: 17
+    title: Game of life in memristor cellular automata grid
+    year: '2018'
+  RCeprCUAAAAJ:qxL8FJ1GzNcC:
+    citations: 2
+    title: A new approach based on memristor crossbar for synchronization
+    year: '2016'
+  RCeprCUAAAAJ:r0BpntZqJG4C:
+    citations: 18
+    title: Memristor hardware accelerator of quantum computations
+    year: '2019'
+  RCeprCUAAAAJ:rO6llkc54NcC:
+    citations: 1
+    title: 'Memristor-based Oscillator for Complex Chemical Wave Logic Computations: Fredkin Gate Paradigm'
+    year: '2022'
+  RCeprCUAAAAJ:sSrBHYA8nusC:
+    citations: 5
+    title: A Fast and Compact Threshold Switch-Based Cellular Nonlinear Network Cell
+    year: '2025'
+  RCeprCUAAAAJ:tOudhMTPpwUC:
+    citations: 5
+    title: Neuromorphic circuits on segmented crossbar architectures with enhanced properties
+    year: '2020'
+  RCeprCUAAAAJ:tS2w5q8j5-wC:
+    citations: 0
+    title: Proceedings of the 18th ACM International Symposium on Nanoscale Architectures
+    year: '2023'
+  RCeprCUAAAAJ:u-x6o8ySG0sC:
+    citations: 9
+    title: GPU and FPGA parallelization of fuzzy cellular automata for the simulation of wildfire spreading
+    year: '2016'
+  RCeprCUAAAAJ:u5HHmVD_uO8C:
+    citations: 26
+    title: LC filters with enhanced memristive damping
+    year: '2015'
+  RCeprCUAAAAJ:u9iWguZQMMsC:
+    citations: 2
+    title: Image Processing with Memristor Cellular Nonlinear Networks Featuring Volatile Threshold Switches
+    year: '2024'
+  RCeprCUAAAAJ:uWQEDVKXjbEC:
+    citations: 9
+    title: Custom RISC-V architecture incorporating memristive in-memory computing
+    year: '2024'
+  RCeprCUAAAAJ:u_35RYKgDlwC:
+    citations: 3
+    title: On Edge Image Processing Acceleration with Low Power Neuro-Memristive Segmented Crossbar Array Architecture.
+    year: '2022'
+  RCeprCUAAAAJ:vRqMK49ujn8C:
+    citations: 0
+    title: Design and Implementation of Cellular Automata Computing Architectures
+    year: '2025'
+  RCeprCUAAAAJ:wbdj-CoPYUoC:
+    citations: 0
+    title: On the simplification of a Physics-based VCM Memristor Model targeting faster simulation speed
+    year: '2023'
+  RCeprCUAAAAJ:xtRiw3GOFMkC:
+    citations: 0
+    title: Smart bio-inspired electronic systems with memristive devices
+    year: '2017'
+  RCeprCUAAAAJ:yD5IFk8b50cC:
+    citations: 9
+    title: Beneficial role of noise in hf-based memristors
+    year: '2022'
+  RCeprCUAAAAJ:zA6iFVUQeVQC:
+    citations: 10
+    title: Material design strategies for emulating neuromorphic functionalities with resistive switching memories
+    year: '2022'

@@ -12,7 +12,22 @@
     var entries = Array.prototype.slice.call(document.querySelectorAll(".publication-entry"));
     if (!entries.length) return;
 
-    var state = { type: "all", topic: "all" };
+    var state = { type: "all", topic: "all", sort: "newest" };
+
+    // Capture the original year-grouped DOM so "Newest" can be restored exactly.
+    var listRoot = document.querySelector(".publications");
+    var originalOrder = listRoot ? Array.prototype.slice.call(listRoot.children) : [];
+    // For citation sort: each entry's <li> wrapper + its citation count.
+    var items = entries.map(function (e) {
+      return {
+        entry: e,
+        li: e.closest("li") || e,
+        cites: parseInt(e.getAttribute("data-pub-citations") || "0", 10),
+        year: parseInt(e.getAttribute("data-pub-year") || "0", 10),
+      };
+    });
+    // A flat container we build once for citation-sorted view.
+    var flatList = null;
 
     function matches(entry) {
       var type = entry.getAttribute("data-pub-type") || "";
@@ -26,40 +41,73 @@
       return typeOk && topicOk;
     }
 
-    function apply() {
-      var anyVisible = false;
-      entries.forEach(function (entry) {
-        // jekyll-scholar wraps each entry's content in an <li>.
-        var li = entry.closest("li") || entry;
-        if (matches(entry)) {
-          li.style.display = "";
-          anyVisible = true;
-        } else {
-          li.style.display = "none";
-        }
-      });
+    function ensureFlatList() {
+      if (flatList) return flatList;
+      flatList = document.createElement("ol");
+      flatList.className = "bibliography flat-sorted";
+      flatList.style.display = "none";
+      if (listRoot) listRoot.appendChild(flatList);
+      return flatList;
+    }
 
-      // Hide year headings + lists that have no visible entries.
-      document.querySelectorAll("ol.bibliography").forEach(function (ol) {
-        var visible = ol.querySelectorAll("li:not([style*='display: none'])").length;
-        var heading = ol.previousElementSibling;
-        if (heading && heading.tagName === "H2") {
-          heading.style.display = visible ? "" : "none";
-        }
-        ol.style.display = visible ? "" : "none";
-      });
-
-      var empty = document.getElementById("pub-filter-empty");
-      if (empty) empty.hidden = anyVisible;
-
-      // Live count next to the "Papers" heading.
+    function setCount(n) {
       var count = document.getElementById("pub-count");
-      if (count) {
-        count.textContent = entries.filter(function (e) {
-          var li = e.closest("li") || e;
-          return li.style.display !== "none";
-        }).length;
-      }
+      if (count) count.textContent = n;
+    }
+
+    function applyNewest() {
+      // Restore the original year-grouped DOM and hide the flat list.
+      if (flatList) flatList.style.display = "none";
+      var visibleCount = 0;
+      items.forEach(function (it) {
+        if (matches(it.entry)) {
+          it.li.style.display = "";
+          visibleCount++;
+        } else {
+          it.li.style.display = "none";
+        }
+      });
+      document.querySelectorAll("ol.bibliography:not(.flat-sorted)").forEach(function (ol) {
+        var vis = ol.querySelectorAll("li:not([style*='display: none'])").length;
+        var heading = ol.previousElementSibling;
+        if (heading && heading.tagName === "H2") heading.style.display = vis ? "" : "none";
+        ol.style.display = vis ? "" : "none";
+      });
+      setCount(visibleCount);
+      var empty = document.getElementById("pub-filter-empty");
+      if (empty) empty.hidden = visibleCount > 0;
+    }
+
+    function applyCitations() {
+      // Hide year headings + original lists; show one flat list sorted by citations.
+      document.querySelectorAll("ol.bibliography:not(.flat-sorted)").forEach(function (ol) {
+        ol.style.display = "none";
+        var heading = ol.previousElementSibling;
+        if (heading && heading.tagName === "H2") heading.style.display = "none";
+      });
+      var flat = ensureFlatList();
+      flat.innerHTML = "";
+      var matched = items.filter(function (it) {
+        return matches(it.entry);
+      });
+      matched.sort(function (a, b) {
+        if (b.cites !== a.cites) return b.cites - a.cites;
+        return b.year - a.year; // tie-break: newer first
+      });
+      matched.forEach(function (it) {
+        var clone = it.li.cloneNode(true);
+        clone.style.display = "";
+        flat.appendChild(clone);
+      });
+      flat.style.display = matched.length ? "" : "none";
+      setCount(matched.length);
+      var empty = document.getElementById("pub-filter-empty");
+      if (empty) empty.hidden = matched.length > 0;
+    }
+
+    function apply() {
+      if (state.sort === "citations") applyCitations();
+      else applyNewest();
     }
 
     bar.addEventListener("click", function (e) {
@@ -79,6 +127,21 @@
       }
       apply();
     });
+
+    // Sort control (Newest / Citations).
+    var sortBar = document.getElementById("pub-sort");
+    if (sortBar) {
+      sortBar.addEventListener("click", function (e) {
+        var btn = e.target.closest(".pub-sort-btn");
+        if (!btn) return;
+        sortBar.querySelectorAll(".pub-sort-btn").forEach(function (b) {
+          b.classList.remove("active");
+        });
+        btn.classList.add("active");
+        state.sort = btn.getAttribute("data-sort");
+        apply();
+      });
+    }
 
     // Preselect a topic filter from the URL (?topic=slug), e.g. linked from
     // the homepage research-highlight cards.
